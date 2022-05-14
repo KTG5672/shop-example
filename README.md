@@ -37,5 +37,5 @@ Spring Boot, Spring Security, JWT, JPA (Hibernate), React.js, Mysql
 ERD
 ---------
   
-  ![image](https://user-images.githubusercontent.com/38649590/168266418-4e11f23a-07da-4141-ba33-adc97d77f10c.png)
+https://www.erdcloud.com/d/2nQfiCK9pdKpoSYRn
 
