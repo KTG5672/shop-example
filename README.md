@@ -4,7 +4,7 @@
 ====================
 사용 기술 및 프레임 워크
 ---------
-Spring Boot, Spring Security, JWT, JPA (Hibernate), React.js, Mysql
+Spring Boot, Spring Security, JWT, JPA (Hibernate), Mysql
 
 기능 목록
 ---------
