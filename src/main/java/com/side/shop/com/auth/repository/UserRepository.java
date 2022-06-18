@@ -12,12 +12,13 @@ public class UserRepository {
 
     private final EntityManager em;
 
-    public User save(User user) {
+    public User save(final User user) {
         em.persist(user);
         return user;
     }
 
-    public User find(Long userId) {
+    public User find(final Long userId) {
         return em.find(User.class, userId);
     }
+
 }
