@@ -14,7 +14,9 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootTest
 @Transactional
 class UserRepositoryTest {
-  @Autowired UserRepository userRepository;
+
+  @Autowired
+  UserRepository userRepository;
 
   User user;
 

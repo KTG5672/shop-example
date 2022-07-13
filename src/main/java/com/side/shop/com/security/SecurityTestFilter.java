@@ -21,12 +21,14 @@ public class SecurityTestFilter extends HttpFilter {
     String token = getTokenFromHeader(request);
     if (token != null) {
       AbstractAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
-            "TEST_USER_ID"
-          ,null
-          ,null
+          "TEST_USER_ID"
+          , null
+          , null
       );
-      authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request)); //기본적으로 제공한 details 세팅
-      SecurityContextHolder.getContext().setAuthentication(authentication); //세션에서 계속 사용하기 위해 securityContext에 Authentication 등록
+      authentication.setDetails(
+          new WebAuthenticationDetailsSource().buildDetails(request)); //기본적으로 제공한 details 세팅
+      SecurityContextHolder.getContext()
+          .setAuthentication(authentication); //세션에서 계속 사용하기 위해 securityContext에 Authentication 등록
     }
     chain.doFilter(request, response);
   }

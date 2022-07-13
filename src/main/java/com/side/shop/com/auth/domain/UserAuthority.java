@@ -22,7 +22,8 @@ import lombok.NoArgsConstructor;
 @Getter
 public class UserAuthority {
 
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   @ManyToOne(fetch = FetchType.LAZY)
@@ -38,7 +39,8 @@ public class UserAuthority {
     this.authorityCode = authorityCode;
   }
 
-  public static UserAuthority createUserAuthority(final User user, final AuthorityCode authorityCode) {
+  public static UserAuthority createUserAuthority(final User user,
+      final AuthorityCode authorityCode) {
     return new UserAuthority(user, authorityCode);
   }
 
